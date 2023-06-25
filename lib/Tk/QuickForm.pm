@@ -37,6 +37,9 @@ use Tk::PNG;
 
 =head1 DESCRIPTION
 
+This widget allows you to quickly set up a form for the user to fill out or modify.
+Attempts are made to make it clear and elegant.
+
 Inherits L<Tk::Frame>. With the B<-structure> option you can define
 fields the user can modify as well as its layout. 
 
@@ -53,23 +56,19 @@ fields containing empty strings.
 
 =item Switch: B<-autovalidate>
 
-validate the form whenever an entry changes value.
-
-=item Switch: B<-colorimage>
-
-Set an image object for I<color> items
+By default 1. Validate the form whenever an entry changes value.
 
 =item Switch: B<-fileimage>
 
-Set an image object for I<file> items
+Set an image object for I<file> items. By default it is the file icon from Tk.
 
 =item Switch: B<-folderimage>
 
-Set an image object for I<folder> items
+Set an image object for I<folder> items. By default it is the folder icon from Tk.
 
 =item Switch: B<-fontimage>
 
-Set an image object for I<folder> items
+Set an image object for I<folder> items. By default it is the I<font_icon.png> in this package.
 
 =item Switch: B<-postvalidatecall>
 
@@ -205,9 +204,9 @@ Creates an ColorEntry item. See L<Tk::ColorEntry>.
 
  myexternal => ['ext1', 'My external', 'Full::Class::Name', @options],
 
-Adds an external class.
+Adds an external class. See below at B<USER DEFINED TYPES>.
 
-=item B<ext2>
+=item B<ext2> 
 
  myexternal => ['ext2', 'Full::Class::Name', @options],
 

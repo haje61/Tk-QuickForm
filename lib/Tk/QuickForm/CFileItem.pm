@@ -23,7 +23,11 @@ Inherits L<Tk::QuickForm::CTextItem>. Provides a file entry with dialog for L<Tk
 You should never create an instance directly like above. This should
 be handled by L<Tk::QuickForm>.
 
-=head1 B<CONFIG VARIABLES>
+=head1 CONFIG VARIABLES
+
+=head1 CONFIG VARIABLES
+
+All options, except I<-textvariable>, of L<Tk::Entry> are available.
 
 =over 4
 
@@ -41,7 +45,7 @@ sub Populate {
 	$self->ConfigSpecs(
 		-image => [$self->Subwidget('Select')],
 		-background => ['SELF', 'DESCENDANTS'],
-		DEFAULT => ['SELF'],
+		DEFAULT => [$self->Subwidget('Entry')],
 	);
 }
 

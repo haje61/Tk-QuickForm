@@ -24,7 +24,9 @@ Inherits L<Tk::QuickForm::CBaseClass>.  Providess a row of Radiobuttons for L<Tk
 You should never create an instance directly like above. This should
 be handled by L<Tk::QuickForm>.
 
-=head1 B<CONFIG VARIABLES>
+=head1 CONFIG VARIABLES
+
+All options, except I<-variable>, of L<Tk::Radiobutton> are available.
 
 =over 4
 

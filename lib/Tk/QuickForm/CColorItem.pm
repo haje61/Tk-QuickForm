@@ -25,7 +25,7 @@ Inherits L<Tk::QuickForm::CTextItem>. Provides a ColorEntry field for L<Tk::Quic
 You should never create an instance directly like above. This should
 be handled by L<Tk::QuickForm>.
 
-=head1 B<CONFIG VARIABLES>
+=head1 CONFIG VARIABLES
 
 All options, except I<-variable>, of L<Tk::Checkbutton> are available.
 

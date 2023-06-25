@@ -24,6 +24,18 @@ Inherits L<Tk::QuickForm::CFileItem>. Provides a folder entry with dialog for L<
 You should never create an instance directly like above. This should
 be handled by L<Tk::QuickForm>.
 
+=head1 CONFIG VARIABLES
+
+All options, except I<-textvariable>, of L<Tk::Entry> are available.
+
+=over 4
+
+=item Switch: B<-image>
+
+Image to be used for the dialog button.
+
+=back
+
 =cut
 
 sub createHandler {

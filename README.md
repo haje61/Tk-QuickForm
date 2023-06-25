@@ -1,6 +1,9 @@
 # Tk-QuickForm
 Quickly set up a form
 
+This widget allows you to quickly set up a form for the user to fill out or modify.
+Attempts are made to make it clear and elegant.
+
 Inherits Tk::Frame.
 
 With the B<-structure> option you can define

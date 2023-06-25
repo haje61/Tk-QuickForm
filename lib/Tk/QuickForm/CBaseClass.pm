@@ -153,7 +153,7 @@ Unknown. If you find any, please contact the author.
 
 =over 4
 
-=item L<Tk::ColorEntry>
+=item L<Tk::QuickForm>
 
 =back
 

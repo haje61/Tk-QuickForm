@@ -26,7 +26,9 @@ Inherits L<Tk::QuickForm::CTextItem>. Provides a list entry for L<Tk::QuickForm>
 You should never create an instance directly like above. This should
 be handled by L<Tk::QuickForm>.
 
-=head1 B<CONFIG VARIABLES>
+=head1 CONFIG VARIABLES
+
+All options, except I<-textvariable>, of L<Tk::Entry> are available.
 
 =over 4
 
@@ -48,7 +50,7 @@ sub Populate {
 	$self->SUPER::Populate($args);
 
 	$self->ConfigSpecs(
-		DEFAULT => ['SELF'],
+		DEFAULT => [$self->Subwidget('Entry')],
 	);
 }
 

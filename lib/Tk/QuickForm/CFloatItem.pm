@@ -26,6 +26,10 @@ Inherits L<Tk::QuickForm::CTextItem>. Provides an entry for floating point numbe
 You should never create an instance directly like above. This should
 be handled by L<Tk::QuickForm>.
 
+=head1 CONFIG VARIABLES
+
+All options, except I<-textvariable>, of L<Tk::Entry> are available.
+
 =cut
 
 sub validate {

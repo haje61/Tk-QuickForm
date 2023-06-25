@@ -25,7 +25,7 @@ Inherits L<Tk::QuickForm::CBaseClass>.Provides a Spinbox widget for L<Tk::QuickF
 You should never create an instance directly like above. This should
 be handled by L<Tk::QuickForm>.
 
-=head1 B<CONFIG VARIABLES>
+=head1 CONFIG VARIABLES
 
 All options, except I<-textvariable>, of L<Tk::Spinbox> are available.
 
