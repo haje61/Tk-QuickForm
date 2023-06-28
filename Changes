@@ -1,4 +1,7 @@
 Revision history for Perl extension Tk::QuickForm.
 
+0.02  Wed Jum 28 2023
+	Increased delay with testing to 1000 ms. This prevents tests failing on slow machines.
+
 0.01  Sun Jun 25 2023
 	Initial release

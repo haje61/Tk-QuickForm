@@ -76,7 +76,7 @@ sub ValidUpdate {}
 package main;
 
 createapp;
-# $delay = 1500;
+$delay = 1000;
 
 my %values = ();
 my $form;
