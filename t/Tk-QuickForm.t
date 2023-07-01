@@ -4,6 +4,9 @@ use warnings;
 use Test::Tk;
 use Tk;
 
+# use Tk::GtkSettings;
+# applyGtkSettings;
+
 use Test::More tests => 16;
 BEGIN { 
 	use_ok('Tk::QuickForm::CBaseClass');
@@ -81,8 +84,6 @@ $delay = 1000;
 my %values = ();
 my $form;
 if (defined $app) {
-	my $ext1 = $app->CColorItem;
-	my $ext2 = $app->MyExternal;
 	my $rbut;
 	my $lbut;
 	my $wframe = $app->Frame(-relief => 'groove', -borderwidth => 3)->pack(-expand => 1, -fill => 'both');
@@ -96,9 +97,9 @@ if (defined $app) {
 		},
 		-tabside => 'left',
 		-types => [
-			https => ['CTextItem', -regex => '^https\\:\\/\\/'],
-			onoff => ['CBooleanItem', -offvalue => 'off', -onvalue => 'on'],
-			scale10 => ['CScaleItem', -from => -10, -to => 10],
+			https => ['Tk::QuickForm::CTextItem', -regex => '^https\\:\\/\\/'],
+			onoff => ['Tk::QuickForm::CBooleanItem', -offvalue => 'off', -onvalue => 'on'],
+			scale10 => ['Tk::QuickForm::CScaleItem', -from => -10, -to => 10],
 		],
 		-structure => [
 			'*page' => 'Arrays',
@@ -192,7 +193,7 @@ if (defined $app) {
 }
 
 @tests = (
-	[sub { return defined $form }, 1, 'Created Tk::QuickForm'],
+	[sub { return defined $form }, 1, 'created Tk::QuickForm'],
 );
 
 starttesting;

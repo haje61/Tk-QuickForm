@@ -9,7 +9,7 @@ Tk::QuickForm - Quickly set up a form.
 use strict;
 use warnings;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use Tk;
 use base qw(Tk::Frame);
@@ -313,18 +313,18 @@ sub Populate {
 	$self->SUPER::Populate($args);
 
 	$self->{TYPES} = {
-		boolean => ['Tk::TabedForm::CBooleanItem', -onvalue => 1, -offvalue => 0],
-		color => ['Tk::TabedForm::CColorItem'],
-		file => ['Tk::TabedForm::CFileItem', -image => '-fileimage'],
-		float => ['Tk::TabedForm::CFloatItem', ],
-		folder => ['Tk::TabedForm::CFolderItem', -image => '-folderimage'],
-		font => ['Tk::TabedForm::CFontItem', -image => '-fontimage'],
-		'integer' => ['Tk::TabedForm::CTextItem', -regex => '^-?\d+$'],
-		list => ['Tk::TabedForm::CListItem'],
-		radio => ['Tk::TabedForm::CRadioItem'],
-		scale => ['CScaleItem', -from => 0, -to => 100],
-		spin => ['Tk::TabedForm::CSpinItem', -from => 0, -to => 100, -regex => '^-?\d+$'],
-		text => ['Tk::TabedForm::CTextItem'],
+		boolean => ['Tk::QuickForm::CBooleanItem', -onvalue => 1, -offvalue => 0],
+		color => ['Tk::QuickForm::CColorItem'],
+		file => ['Tk::QuickForm::CFileItem', -image => '-fileimage'],
+		float => ['Tk::QuickForm::CFloatItem', ],
+		folder => ['Tk::QuickForm::CFolderItem', -image => '-folderimage'],
+		font => ['Tk::QuickForm::CFontItem', -image => '-fontimage'],
+		'integer' => ['Tk::QuickForm::CTextItem', -regex => '^-?\d+$'],
+		list => ['Tk::QuickForm::CListItem'],
+		radio => ['Tk::QuickForm::CRadioItem'],
+		scale => ['Tk::QuickForm::CScaleItem', -from => 0, -to => 100],
+		spin => ['Tk::QuickForm::CSpinItem', -from => 0, -to => 100, -regex => '^-?\d+$'],
+		text => ['Tk::QuickForm::CTextItem'],
 	};
 	if (defined $types) {
 		while (@$types) {
